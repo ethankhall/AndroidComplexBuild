@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = JavaVersion.VERSION_1_6
+    targetCompatibility = JavaVersion.VERSION_1_6
+
+    repositories{
+        mavenCentral()
+    }
+
+    //Anything else you would need here that would be shared across all subprojects
+}
