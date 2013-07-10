@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.4.2'
+    }
+}
+
+evaluationDependsOn(':project1')
+evaluationDependsOn(':project2')
+
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "17.0"
+}
+
+dependencies {
+    compile project(":project1:A1")
+    compile project(":project1:B1")
+    compile project(":project1:Z1")
+
+    compile project(":project2:A2")
+    compile project(":project2:B2")
+    compile project(":project2:Z2")
+}
