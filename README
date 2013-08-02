@@ -1,0 +1,3 @@
+AndroidTopProject, project1, project2 all come from a SO post, If you go into AndroidTop there is a README w/ the explintaion and a link to the question
+
+NDK Project shows you how to use Gradle and the NDK (until google releases NDK support in Gradle)
