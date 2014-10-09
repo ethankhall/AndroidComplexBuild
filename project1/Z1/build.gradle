@@ -1,0 +1,3 @@
+dependencies {
+	compile project(':project1:A1')
+}

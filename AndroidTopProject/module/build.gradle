@@ -1,21 +1,21 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4.2'
+        classpath 'com.android.tools.build:gradle:0.13.3'
     }
 }
 
 evaluationDependsOn(':project1')
 evaluationDependsOn(':project2')
 
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "17.0"
+    compileSdkVersion 20
+    buildToolsVersion "20.0"
 }
 
 dependencies {

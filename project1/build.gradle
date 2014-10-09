@@ -3,12 +3,12 @@ apply plugin: 'java'
 subprojects {
     apply plugin: 'java'
 
-    sourceCompatibility = JavaVersion.VERSION_1_6
-    targetCompatibility = JavaVersion.VERSION_1_6
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
 
-    repositories{
-        mavenCentral()
+    repositories {
+        jcenter()
     }
 
-    //Anything else you would need here that would be shared across all subprojects
+    // Anything else you would need here that would be shared across all subprojects
 }
