@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100" android:versionName="4.2.0" package="com.android.example.a2">
-    <uses-sdk android:targetSdkVersion="16"/>
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android.example.b2" android:versionCode="220" android:versionName="2.2.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="20" />
 </manifest>

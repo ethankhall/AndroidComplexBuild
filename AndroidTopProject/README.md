@@ -59,14 +59,14 @@ You are going to need files here:
     subprojects {
         apply plugin: 'java'
 
-        sourceCompatibility = JavaVersion.VERSION_1_6
-        targetCompatibility = JavaVersion.VERSION_1_6
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
 
-        repositories{
-            mavenCentral()
+        repositories {
+            jcenter()
         }   
 
-        //Anything else you would need here that would be shared across all subprojects
+        // Anything else you would need here that would be shared across all subprojects
     }
 
 
@@ -74,52 +74,52 @@ You are going to need files here:
 
     buildscript {
         repositories {
-            mavenCentral()
+            jcenter()
         }   
 
         dependencies {
-            classpath 'com.android.tools.build:gradle:0.5.+'
+            classpath 'com.android.tools.build:gradle:0.13.3'
         }   
     }
 
     subprojects {
-        apply plugin: 'android-library'
+        apply plugin: 'com.android.library'
 
         android {
-            compileSdkVersion 17
-            buildToolsVersion "17.0"
+            compileSdkVersion 20
+            buildToolsVersion "20.0"
         }   
 
-        sourceCompatibility = JavaVersion.VERSION_1_6
-        targetCompatibility = JavaVersion.VERSION_1_6
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
 
-        repositories{
-            mavenCentral()
+        repositories {
+            jcenter()
         }   
 
-        //Anything else you would need here that would be shared across all subprojects
+        // Anything else you would need here that would be shared across all subprojects
     }
 
 ### module/build.gradle
 
     buildscript {
         repositories {
-            mavenCentral()
+            jcenter()
         }   
 
         dependencies {
-            classpath 'com.android.tools.build:gradle:0.5.+'
+            classpath 'com.android.tools.build:gradle:0.13.3'
         }   
     }
 
     evaluationDependsOn(':project1')
     evaluationDependsOn(':project2')
 
-    apply plugin: 'android'
+    apply plugin: 'com.android.application'
 
     android {
-        compileSdkVersion 17
-        buildToolsVersion "17.0"
+        compileSdkVersion 20
+        buildToolsVersion "20.0"
     }
 
     dependencies {
